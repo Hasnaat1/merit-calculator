@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PU Merit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PU Merit Calculator</h1>
+        <div class="calculator">
+            <h3>Calculate your Admission Merit</h3>
+            <form id="meritForm">
+                <label for="matricObtained">Matric Obtain Marks:</label>
+                <input type="number" id="matricObtained" required><br>
+
+                <label for="matricTotal">Matric Total Marks:</label>
+                <input type="number" id="matricTotal" required><br>
+
+                <label for="fscObtained">FSc Obtain Marks:</label>
+                <input type="number" id="fscObtained" required><br>
+
+                <label for="fscTotal">FSc Total Marks:</label>
+                <input type="number" id="fscTotal" required><br>
+
+                <label for="entryTest">Entry Test Marks:</label>
+                <input type="number" id="entryTest" required><br>
+
+                <button type="button" onclick="calculateMerit()">Calculate</button>
+                <button type="reset">Reset</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
